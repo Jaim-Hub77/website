@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>JAIM</title></head>
+<body>
+<body style="background-color:#1995AD;">
+<h1><center><u>LOGIN</center></u></h1>
+<center><img src="2023_Facebook_icon.svg.webp"alt=Jaim Jose"width=150 height=150></center>
+<center><button>Username</button><input type="username" id="user"></center><br><br><br>
+<center><button>Password</button><input type="password" id="pass"></center><br><br><br>	
+<center><button onclick="JF()">SUBMIT</button></center>
+<script>
+function JF()
+{
+let username = document.getElementById("user").value;
+let password = document.getElementById("pass").value;
+let uname = localStorage.getItem("username");
+let pass = localStorage.getItem("password");
+if(username == uname && password == pass)
+{alert("you are valid");
+window.location.href="profile.html";
+}
+else{ alert("intruder");}
+}
+</script>
+
+
+
+
+
